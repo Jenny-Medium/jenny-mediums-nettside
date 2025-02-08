@@ -1,11 +1,16 @@
-import Image from "next/image";
+import CursorEffect from "@/components/CursorEffect/CursorEffect";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <h1 className="text-white text-4xl md:text-6xl font-bold text-center">
-        Velkommen til Jenny Mediums nettside
-      </h1>
-    </div>
+    <main style={{
+      margin: 0,
+      padding: 0,
+      position: 'relative',
+      width: '100vw',
+      height: '100vh',
+      overflow: 'hidden'
+    }}>
+      <CursorEffect />
+    </main>
   );
 }
